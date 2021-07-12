@@ -12,11 +12,9 @@ export function post(url,payload){
     return axiosInstance.post(url,payload);
 }
 
-
 export function put(url,payload){
     return axiosInstance.put(url,payload);
 }
-
 
 export function del(url,id){
     return axiosInstance.delete(url,{data:{"id":id}});

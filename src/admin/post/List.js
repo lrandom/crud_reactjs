@@ -11,8 +11,7 @@ class List extends React.Component {
     }
 
     componentDidMount() {
-    
-this.get();
+        this.get();
     }
 
     get(){
@@ -35,6 +34,7 @@ this.get();
 
     render(){
         return (<div>
+            <button onClick={()=>{this.props.history.push('/admin/post/add')}}>Add</button>
             <table>
                 <tr>
                     <td>Id</td>
@@ -65,4 +65,4 @@ this.get();
     }
 }
 
-export default List;
+export default withRouter(List);
